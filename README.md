@@ -2,6 +2,6 @@ This project is built with react and reactrouter library which utilize the brows
 
 Below are some features of this single page web application:
 
-> Prompting UI - for promping a user success or error message
-> Registration UI - for signing up users
-> Login UI - for loging in users
+>- Prompting UI - for promping a user success or error message
+>- Registration UI - for signing up users
+>- Login UI - for loging in users

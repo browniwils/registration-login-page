@@ -24,8 +24,12 @@ const Signup = () => {
         const password = passwordRef.current.value.trim();
         const confirmPassword = confirmpasswordRef.current.value.trim();
 
-        if (!username.length && email.length && firstname.length && lastname.length && password.length && confirmPassword.length && password === confirmPassword) {
-            showNotification({ show: true, type: "failed", message: "Make sure fields are correct" });
+        if (!username.length || !email.length || !firstname.length || !lastname.length || !password.length || !confirmPassword.length) {
+            setShowNotification({ show: true, type: "failed", message: "Make sure fields are correct" });
+            return;
+        }
+        if ( password !== confirmPassword) {
+            setShowNotification({ show: true, type: "failed", message: "Password mismatch!" });
             return;
         }
 
