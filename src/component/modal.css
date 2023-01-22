@@ -1,0 +1,74 @@
+.back-drop {
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background: var(--secondary-dark-transparent-2);
+}
+
+.close-icon {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    font-weight: bold;
+    color: var(--light-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #f23838;
+    cursor: pointer;
+    transform: translate(50%, -50%);
+}
+
+.close-icon:hover {
+    background-color: #ff1e1e;
+}
+
+.back-drop__overlay {
+    width: 70%;
+    height: 90%;
+    align-self: center;
+    border-radius: var(--round-edge-1);
+    background: var(--light-2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    box-shadow: 0 0 3rem var(--secondary-dark-transparent-2);
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    background-image: url(https://cdn.vectorstock.com/i/1000x1000/04/41/registration-abstract-concept-vector-34940441.webp);
+    object-fit: cover;
+    background-position: center top;
+}
+
+.image-container div {
+    position: absolute;
+    right: 0;
+    font-size: 1.7rem;
+    padding: 6rem 2rem;
+    overflow-wrap: break-word;
+    text-align: center;
+    color: var(--light-2);
+    background-color: var(--secondary-dark-transparent);
+    width: 100%;
+    height: 100%;
+    text-shadow: 0 0 36px #0f0f0f;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 4rem;
+    overflow: hidden;
+}

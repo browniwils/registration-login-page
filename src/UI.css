@@ -1,0 +1,146 @@
+/* form style */
+
+.img {
+    width: 3rem;
+}
+
+.form-group-nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form {
+    width: 100%;
+    padding: 1rem 1rem 0.5rem;
+}
+
+.form-group:not(.form-group:last-child) {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.form-input,
+.form-btn {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-top: 0.1rem solid transparent;
+    outline: none;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.15rem 0.2rem #262f3f20;
+}
+
+.form-input:hover {
+    border-top: 0.1rem solid #262f3f20;
+}
+
+.form-btn {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-light);
+    color: var(--light-2);
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: var(--secondary-dark);
+}
+/* end form style */
+
+/* other-links */
+.other-links {
+    display: flex;
+    align-self: flex-end;
+    gap: 1rem;
+    padding: 0 1.3rem;
+}
+
+.other-links a {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+/* end other-links */
+
+/* start notificaton */
+
+.success-message {
+    color: var(--success);
+    border: 0.1rem solid var(--success);
+}
+
+.error-message {
+    color: var(--error);
+    border: 0.1rem solid var(--error);
+}
+
+.notificaton {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 90%;
+    font-size: small;
+    border-radius: 0.3rem;
+}
+.notificaton i {
+    font-size: large;
+    padding-right: 0.5rem;
+}
+/* .reset-successful,
+.reset-error {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    background-color: var(--light-2);
+} */
+/* end notificaton */
+
+/* start spinner */
+
+.spinner-container {
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.spinner {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--secondary-dark);
+    border-color: var(--secondary-dark) transparent var(--secondary-dark) transparent;
+    animation: spinner 1s ease-out infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* end spinner */

@@ -1,0 +1,38 @@
+:root {
+  --light: #edf3ff42;
+  --light-2: #f8fbff;
+  --dark-light: #2d3a5409;
+  --primary-light: #d4e2fe;
+  --primary-dark: #a4bbea;
+  --secondary-light: #2d3a54;
+  --secondary-dark: #1f293c;
+  --secondary-dark-transparent: #37445d83;
+  --secondary-dark-transparent-2: #262f3fcd;
+  --success: #10c62b;
+  --error: #c61010;
+  --round-edge-1: .8rem;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nirmala UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
